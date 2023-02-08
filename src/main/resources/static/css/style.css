@@ -1,0 +1,11 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.send-button {
+  display: block;
+  margin-top: 1rem;
+  width: 8rem;
+}
