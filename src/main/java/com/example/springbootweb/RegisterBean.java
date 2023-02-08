@@ -8,4 +8,5 @@ import lombok.Setter;
 public class RegisterBean {
   private String name;
   private String age;
+  private String remarks;
 }

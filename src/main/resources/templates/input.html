@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>入力画面</title>
+  <meta charset="UTF-8" />
+  <title>入力画面</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
   <h1>登録情報を入力してください</h1>
-  <form action="/register" method="post">
-  名前：<input type="text" name="name" size="10" /><br/>
-  年齢：<input type="radio" name="age" value="18歳未満"/>18歳未満　
-        <input type="radio" name="age" value="18歳以上"/>18歳以上<br/><br/>
-  <input type="submit" value="送信" />
+  <form class="input-form" action="/register" method="post">
+    <div>
+      <label for="name">
+        名前：<input id="name" type="text" name="name" size="10" /><br />
+      </label>
+    </div>
+    <div>
+      年齢：
+      <label for="age1">
+        <input id="age1" type="radio" name="age" value="18歳未満" />18歳未満　
+      </label>
+      <label for="age2">
+        <input id="age2" type="radio" name="age" value="18歳以上" />18歳以上
+      </label>
+    </div>
+    <div>
+      <textarea name="remarks" rows="4" cols="40" placeholder="備考"></textarea>
+    </div>
+    <input class="send-button" type="submit" value="送信" />
   </form>
 </body>
+
 </html>

@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>確認画面</title>
+  <meta charset="UTF-8">
+  <title>確認画面</title>
 </head>
+
 <body>
   <h2>入力情報を確認して登録ボタンを押してください</h2>
-  名前：<strong th:text="${rb.name}"></strong><br/>
-  年齢：<strong th:text="${rb.age}"></strong><br/><br/>
-<input type="submit" value="登録" />
-<input type="reset" value="戻る" />
+  <p>
+    名前：<strong th:text="${rb.name}"></strong>
+  </p>
+  <p>
+    年齢：<strong th:text="${rb.age}"></strong>
+  </p>
+  <p>
+    備考：<strong th:text="${rb.remarks}"></strong>
+  </p>
+  <input type="submit" value="登録" />
+  <input type="reset" value="戻る" />
 </body>
+
 </html>
