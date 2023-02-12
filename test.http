@@ -1,0 +1,12 @@
+### GET
+GET http://localhost:8080/
+
+### POST
+POST http://localhost:8080/result HTTP/1.1
+content-type: application/json
+
+{
+    "name": "",
+    "age": "",
+    "remarks": "",
+}
